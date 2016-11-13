@@ -73,8 +73,6 @@ public class InventoryMenuScript : MonoBehaviour
     {
         InventoryMenu.enabled = false;
         Hotbar.enabled = true;
-        CraftingMenu.enabled = false;
-        bCraftingMenuVisible = false;
         bInventoryMenuVisible = false;
     }
 
