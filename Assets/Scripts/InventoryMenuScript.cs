@@ -8,6 +8,8 @@ public class InventoryMenuScript : MonoBehaviour
 
     public Canvas InventoryMenu;
     public Canvas Hotbar;
+    public Canvas CraftingMenu;
+    private bool bCraftingMenuVisible = false;
     GameObject[] ItemInInventoryList = null;
 
     private bool bInventoryMenuVisible = false;
@@ -59,6 +61,8 @@ public class InventoryMenuScript : MonoBehaviour
 
     {
         InventoryMenu.enabled = true;
+        CraftingMenu.enabled = false;
+        bCraftingMenuVisible = false;
         Hotbar.enabled = false;
         bInventoryMenuVisible = true;
         UpdateGUI();
@@ -69,6 +73,8 @@ public class InventoryMenuScript : MonoBehaviour
     {
         InventoryMenu.enabled = false;
         Hotbar.enabled = true;
+        CraftingMenu.enabled = false;
+        bCraftingMenuVisible = false;
         bInventoryMenuVisible = false;
     }
 
