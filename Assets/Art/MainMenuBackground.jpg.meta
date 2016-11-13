@@ -1,12 +1,5 @@
 fileFormatVersion: 2
-<<<<<<< HEAD
-guid: 1d9a9be82245bf54cb9dc1d4abc2f500
-timeCreated: 1479036320
-=======
 guid: d2fd1a3443d7b354a86fa555f3cbebb6
-timeCreated: 1479036211
->>>>>>> origin/master
-licenseType: Free
 TextureImporter:
   fileIDToRecycleName: {}
   serializedVersion: 2
@@ -37,31 +30,25 @@ TextureImporter:
     filterMode: -1
     aniso: -1
     mipBias: -1
-    wrapMode: 1
-  nPOTScale: 0
+    wrapMode: -1
+  nPOTScale: 1
   lightmap: 0
   rGBM: 0
   compressionQuality: 50
   allowsAlphaSplitting: 0
-  spriteMode: 1
+  spriteMode: 0
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spritePixelsToUnits: 100
-  alphaIsTransparency: 1
-<<<<<<< HEAD
-  textureType: 8
-  buildTargetSettings: []
-  spriteSheet:
-=======
+  alphaIsTransparency: 0
   spriteTessellationDetail: -1
-  textureType: 8
+  textureType: -1
   buildTargetSettings: []
   spriteSheet:
     serializedVersion: 2
->>>>>>> origin/master
     sprites: []
     outline: []
   spritePackingTag: 
