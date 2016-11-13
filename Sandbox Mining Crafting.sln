@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2015
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sandbox Mining Crafting.CSharp.Plugins", "Sandbox Mining Crafting.CSharp.Plugins.csproj", "{304B810E-EE83-E12E-AA2F-2A39E296819C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sandbox Mining Crafting.CSharp", "Sandbox Mining Crafting.CSharp.csproj", "{7E99F47B-FBA4-6653-E6D9-4B549BE6A5F3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sandbox Mining Crafting.CSharp.Editor", "Sandbox Mining Crafting.CSharp.Editor.csproj", "{89EB96B5-CA89-511D-C1F6-F23F80FF74E4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{304B810E-EE83-E12E-AA2F-2A39E296819C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{304B810E-EE83-E12E-AA2F-2A39E296819C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{304B810E-EE83-E12E-AA2F-2A39E296819C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{304B810E-EE83-E12E-AA2F-2A39E296819C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7E99F47B-FBA4-6653-E6D9-4B549BE6A5F3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7E99F47B-FBA4-6653-E6D9-4B549BE6A5F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7E99F47B-FBA4-6653-E6D9-4B549BE6A5F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7E99F47B-FBA4-6653-E6D9-4B549BE6A5F3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{89EB96B5-CA89-511D-C1F6-F23F80FF74E4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{89EB96B5-CA89-511D-C1F6-F23F80FF74E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{89EB96B5-CA89-511D-C1F6-F23F80FF74E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{89EB96B5-CA89-511D-C1F6-F23F80FF74E4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
