@@ -17,6 +17,7 @@ public struct IntVector2
     public int leveltoload = 0;
     public GameObject pl = null;
     private char[,] blockarray;
+    private GameObject stone = null;
     private GameObject grass = null;
     private GameObject dirt = null;
     private GameObject template_block = null;
@@ -40,6 +41,7 @@ public struct IntVector2
         // Find block templates
         grass = GameObject.Find("grassTop-template");
         dirt = GameObject.Find("dirt-template");
+        stone = GameObject.Find("Stone");
         template_block = GameObject.Find("dirt-template");
         // Find width/height
         blockwidth = grass.GetComponent<Renderer>().bounds.size.x;
@@ -70,6 +72,7 @@ public struct IntVector2
                     case 'G': blockID = "grass";  break;
                     case 'S': break;
                     case 'D': blockID = "dirt";   break;
+                    case 'U': blockID = "stone"; break;
                     default:
                         break;
                 }
@@ -91,7 +94,7 @@ public struct IntVector2
         GameObject imo = GameObject.Find("ItemManager");
         ItemManagerScript ims = imo.GetComponent<ItemManagerScript>();
         //
-        string sFilename = "C:\\Users\\hans laustrup\\AppData\\Roaming\\Unity\\projects\\Sandbox Mining Crafting\\Assets\\Worlds\\World1.txt";
+        string sFilename = "C:\\Users\\anton\\Desktop\\World1.txt";
         int linecounter = 0;
         string line;
         System.IO.StreamReader file = new System.IO.StreamReader(sFilename);
@@ -106,6 +109,7 @@ public struct IntVector2
                     case 'G': go = Instantiate(grass); break;
                     case 'S': go = null; break;
                     case 'D': go = Instantiate(dirt); break;
+                    case 'U': go = Instantiate(stone); break;
                     default:
                         break;
                 }
@@ -208,6 +212,7 @@ public struct IntVector2
                     case 'G': go = Instantiate(grass); break;
                     case 'S': go = null; break;
                     case 'D': go = Instantiate(dirt); break;
+                    case 'U': go = Instantiate(stone); break;
                     default:
                         break;
                 }
