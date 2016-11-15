@@ -2,13 +2,14 @@
 using System.Collections;
 using System.Collections.Generic;
 
-public class ItemManagerScript : MonoBehaviour {
+public class ItemManagerScript : MonoBehaviour
+{
 
     class Item
     {
         public string itemID = "";
         public string itemName = "";
-        public int maxStackSize = 128;
+        public int maxStackSize = 99;
         public Sprite sprite = null;
     }
 
@@ -24,12 +25,13 @@ public class ItemManagerScript : MonoBehaviour {
     List<Block> blockList;
 
     // Use this for initialization
-    void Start() {
+    void Start()
+    {
         // Create the list of all item types
         itemList = new List<Item>();
         Item item;
         item = new Item();
-        item.itemID = "dirt"; item.itemName = "Dirt"; item.maxStackSize = 128; itemList.Add(item);
+        item.itemID = "dirt"; item.itemName = "Dirt"; item.maxStackSize = 99; itemList.Add(item);
         item.sprite = Resources.Load("dirt", typeof(Sprite)) as Sprite;
         item = new Item();
         item.itemID = "stone"; item.itemName = "Stone"; item.maxStackSize = 99; itemList.Add(item);
@@ -50,7 +52,8 @@ public class ItemManagerScript : MonoBehaviour {
 
 
     // Update is called once per frame
-    void Update() {
+    void Update()
+    {
 
     }
 
@@ -109,18 +112,16 @@ public class ItemManagerScript : MonoBehaviour {
     }
 
     // Spawn item with itemID at position xy
-    public void SpawnItem(string itemID, Vector2 xy) {
+    public void SpawnItem(string itemID, Vector2 xy)
+    {
         GameObject dirt = GameObject.Find("dirt");   // Find a gameobject to use as template
         // TODO: sprite texture should be changed to that of itemID
         GameObject go = Instantiate(dirt);
-        go.transform.position = new Vector3(xy.x,xy.y,-8);
+        go.transform.position = new Vector3(xy.x, xy.y, -8);
         // Apply random force
         Rigidbody2D rb = go.GetComponent<Rigidbody2D>() as Rigidbody2D;
         System.Random random = new System.Random();
         int x = random.Next(-100, 100);
         rb.AddForce(new Vector2(x, 100));
     }
-
-
-
 }
