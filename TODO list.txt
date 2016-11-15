@@ -1,6 +1,6 @@
 Fix reload world dosent work
 place block too fast
-destroy blocks too fast
-build and destroy blocks at the same time generates unlimeted LAG
+destroy blocks too fast - DONE
+build and destroy blocks at the same time generates unltimate LAG
 NO DEATH
 too small world
