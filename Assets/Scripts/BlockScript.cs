@@ -12,8 +12,6 @@ public class BlockScript : MonoBehaviour {
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyUp(KeyCode.C))
-        {
             if (CraftingMenu.enabled == true)
             {
                 DestryBlocks = false;
@@ -22,7 +20,6 @@ public class BlockScript : MonoBehaviour {
             {
                 DestryBlocks = true;
             }
-        }
     }
 
 
