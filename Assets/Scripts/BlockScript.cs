@@ -3,7 +3,8 @@ using System.Collections;
 
 public class BlockScript : MonoBehaviour {
     public Canvas CraftingMenu;
-    private bool DestryBlocks;
+    public Canvas Inventory;
+    private bool DestroyBlocks;
     // Use this for initialization
     void Start() {
 
@@ -12,20 +13,27 @@ public class BlockScript : MonoBehaviour {
     // Update is called once per frame
     void Update()
     {
-            if (CraftingMenu.enabled == true)
-            {
-                DestryBlocks = false;
-            }
-            else
-            {
-                DestryBlocks = true;
-            }
+        if (CraftingMenu.enabled == true)
+        {
+            DestroyBlocks = false;
+        }
+        else
+        {
+            DestroyBlocks = true;
+        }
+        if (Inventory.enabled == true)
+        {
+            DestroyBlocks = false;
+        }
+        else
+        {
+            DestroyBlocks = true;
+        }
+
     }
-
-
         void OnMouseOver()
     {
-        if(DestryBlocks == true) {
+        if(DestroyBlocks == true) {
             if (Input.GetMouseButton(0))
             {  // Mouse left-click: Remove a block
                // Find "MakeWorld" script
