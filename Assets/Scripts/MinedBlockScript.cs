@@ -6,7 +6,7 @@ public class MinedBlockScript : MonoBehaviour {
     private IntVector2 blockBeingMined_xy = new IntVector2(-1, -1);  // Block that is currently being mined
     private int blockBeingMined_health = -1;                          // Health of the block currently being mined
     private bool bBlockMinedThisFrame = false;
-    const int BLOCK_MAX_HEALTH = 30;
+    const int BLOCK_MAX_HEALTH = 370;
 
     // Use this for initialization
     void Start () {
