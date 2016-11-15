@@ -8,7 +8,7 @@ public class ItemManagerScript : MonoBehaviour {
     {
         public string itemID = "";
         public string itemName = "";
-        public int maxStackSize = 0;
+        public int maxStackSize = 128;
         public Sprite sprite = null;
     }
 
@@ -29,7 +29,7 @@ public class ItemManagerScript : MonoBehaviour {
         itemList = new List<Item>();
         Item item;
         item = new Item();
-        item.itemID = "dirt"; item.itemName = "Dirt"; item.maxStackSize = 4; itemList.Add(item);
+        item.itemID = "dirt"; item.itemName = "Dirt"; item.maxStackSize = 128; itemList.Add(item);
         item.sprite = Resources.Load("dirt", typeof(Sprite)) as Sprite;
         item = new Item();
         item.itemID = "stone"; item.itemName = "Stone"; item.maxStackSize = 99; itemList.Add(item);
