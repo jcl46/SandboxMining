@@ -718,6 +718,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 46a0e14c7c6d82c42a18dea976cc9776, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  CraftingMenu: {fileID: 471625752}
+  Inventory: {fileID: 375143371}
 --- !u!212 &135571119
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -807,6 +809,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 46a0e14c7c6d82c42a18dea976cc9776, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  CraftingMenu: {fileID: 471625752}
+  Inventory: {fileID: 375143371}
 --- !u!212 &143516845
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3356,6 +3360,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 46a0e14c7c6d82c42a18dea976cc9776, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  CraftingMenu: {fileID: 471625752}
+  Inventory: {fileID: 375143371}
 --- !u!61 &701380228
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5684,6 +5690,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 46a0e14c7c6d82c42a18dea976cc9776, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  CraftingMenu: {fileID: 471625752}
+  Inventory: {fileID: 375143371}
 --- !u!1 &1266596987
 GameObject:
   m_ObjectHideFlags: 0
@@ -8000,6 +8008,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 46a0e14c7c6d82c42a18dea976cc9776, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  CraftingMenu: {fileID: 471625752}
+  Inventory: {fileID: 375143371}
 --- !u!61 &1800258568
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -8878,6 +8888,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 46a0e14c7c6d82c42a18dea976cc9776, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  CraftingMenu: {fileID: 471625752}
+  Inventory: {fileID: 375143371}
 --- !u!1 &2025387395
 GameObject:
   m_ObjectHideFlags: 0
