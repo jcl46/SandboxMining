@@ -10,10 +10,10 @@ public class InventoryManagerScript : MonoBehaviour {
     class Inventory_slot
     {
         public string itemID = "";  // Item type in the inventory slot
-        public int stacksize = 0;   // Number of items stacked in the inventory slot
+        public int stacksize = 128;   // Number of items stacked in the inventory slot
     }
 
-    public const int INVENTORY_SPACES = 8;   // Number of spaces in the inventory
+    public const int INVENTORY_SPACES = 30;   // Number of spaces in the inventory
     Inventory_slot[] inventory = new Inventory_slot[INVENTORY_SPACES];
 
     // Use this for initialization
