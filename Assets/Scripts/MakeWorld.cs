@@ -94,7 +94,7 @@ public struct IntVector2
         GameObject imo = GameObject.Find("ItemManager");
         ItemManagerScript ims = imo.GetComponent<ItemManagerScript>();
         //
-        string sFilename = "C:\\Users\\anton\\Desktop\\World1.txt";
+        string sFilename = "C:\\Users\\hans laustrup\\AppData\\Roaming\\Unity\\projects\\Sandbox Mining Crafting\\Assets\\Worlds\\World1.txt";
         int linecounter = 0;
         string line;
         System.IO.StreamReader file = new System.IO.StreamReader(sFilename);
