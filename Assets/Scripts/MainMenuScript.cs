@@ -54,4 +54,8 @@ public class MainMenuScript : MonoBehaviour {
     {
         Application.Quit();
     }
+    public void RunSettings()
+    {
+        SceneManager.LoadScene (4);
+    }
 }
