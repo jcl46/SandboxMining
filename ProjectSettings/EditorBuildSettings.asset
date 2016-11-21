@@ -13,3 +13,5 @@ EditorBuildSettings:
     path: Assets/Scenes/CreateNewWorld.unity
   - enabled: 1
     path: Assets/Scenes/Scene_1.unity
+  - enabled: 1
+    path: Assets/Scenes/Settings.unity
