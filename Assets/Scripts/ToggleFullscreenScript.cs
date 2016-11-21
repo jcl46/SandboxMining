@@ -26,13 +26,26 @@ public class ToggleFullscreenScript : MonoBehaviour {
     public void SetDropdownIndex(int index)
     {
         ResolutionDropdown.value = index;
+       
+    }
+        void Update () {
+        if (FullscreenToggle.isOn == true)
+            isFullscreen = true;
+            {
+            Screen.fullScreen = true;
+        }
+            if (FullscreenToggle.isOn == false)
+            {
+            Screen.fullScreen = false;
+            isFullscreen = false;
+        }
         if (index == 2)
         {
             if (isFullscreen == true)
             {
                 Screen.SetResolution(1920, 1080, true);
             }
-            if(isFullscreen == false)
+            if (isFullscreen == false)
             {
                 Screen.SetResolution(1920, 1080, false);
             }
@@ -59,18 +72,6 @@ public class ToggleFullscreenScript : MonoBehaviour {
                 Screen.SetResolution(640, 480, false);
             }
         }
+
     }
-        void Update () {
-        if (FullscreenToggle.isOn == true)
-            isFullscreen = true;
-            {
-            Screen.fullScreen = true;
-        }
-            if (FullscreenToggle.isOn == false)
-            {
-            Screen.fullScreen = false;
-            isFullscreen = false;
-        }
-            
-        }
     }
