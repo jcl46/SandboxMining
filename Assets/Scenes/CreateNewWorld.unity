@@ -337,6 +337,7 @@ GameObject:
   - 114: {fileID: 370230752}
   - 114: {fileID: 370230751}
   - 114: {fileID: 370230755}
+  - 114: {fileID: 370230756}
   m_Layer: 5
   m_Name: CreateNewWorldMenu
   m_TagString: Untagged
@@ -438,6 +439,18 @@ MonoBehaviour:
   CreateNewWorldMenu: {fileID: 370230753}
   CreateWorld: {fileID: 2074031173}
   Cancel: {fileID: 1682693053}
+--- !u!114 &370230756
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 370230750}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 072cc219aedc0ea40b5ec7dfdd3eaf47, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  WorldNameInput: {fileID: 1787184123}
 --- !u!1 &376074065
 GameObject:
   m_ObjectHideFlags: 0
@@ -526,14 +539,14 @@ RectTransform:
   m_GameObject: {fileID: 585711924}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 3.3508127, y: 2.54429, z: 1}
+  m_LocalScale: {x: 0.19734573, y: 0.15574406, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 370230754}
   m_RootOrder: 2
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 26.8, y: 109}
+  m_AnchoredPosition: {x: -252, y: 109}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &585711926
@@ -557,16 +570,16 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 12800000, guid: c5727999cbc6c1f4e97724ec905f4312, type: 3}
-    m_FontSize: 0
+    m_FontSize: 300
     m_FontStyle: 0
     m_BestFit: 1
     m_MinSize: 0
-    m_MaxSize: 45
+    m_MaxSize: 300
     m_Alignment: 0
     m_AlignByGeometry: 0
     m_RichText: 1
-    m_HorizontalOverflow: 0
-    m_VerticalOverflow: 0
+    m_HorizontalOverflow: 1
+    m_VerticalOverflow: 1
     m_LineSpacing: 1
   m_Text: Create New World
 --- !u!222 &585711927
