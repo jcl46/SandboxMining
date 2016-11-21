@@ -5,21 +5,26 @@ using System.Collections;
 public class WorldNameRememberScript : MonoBehaviour {
     public InputField WorldNameInput;
     public static string WorldName;
+    public string TheName;
 
     void Start()
     {
-        if (WorldName != null)
-        {
+        var input = gameObject.GetComponent<InputField>();
+        var se = new InputField.SubmitEvent();
+        se.AddListener(SubmitName);
+        input.onEndEdit = se;
 
-            WorldNameInput.text = WorldName;
-        }
+
     }
-
-    public void SaveData(string newName)
+    public void SubmitName(string arg0)
     {
-        WorldName = newName;
+        Debug.Log(arg0);
+        TheName = arg0;
+
     }
-// Update is called once per frame
+
+
+    // Update is called once per frame
     void Update () {
 
 
