@@ -58,4 +58,8 @@ public class MainMenuScript : MonoBehaviour {
     {
         SceneManager.LoadScene (4);
     }
+    public void RunMultiplayer()
+    {
+        SceneManager.LoadScene(5);
+    }
 }
