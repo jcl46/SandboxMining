@@ -31,15 +31,16 @@ public class ToggleFullscreenScript : MonoBehaviour {
       
     }
         void Update () {
-        if (FullscreenToggle.isOn == true)
+        if (FullscreenToggle.isOn == true){
             isFullscreen = true;
-            {
+            Debug.log("Fullscreen is ON");
             Screen.fullScreen = true;
         }
             if (FullscreenToggle.isOn == false)
             {
             Screen.fullScreen = false;
             isFullscreen = false;
+                Debug.log("Fullscreen is OFF");
         }
         if (select == 2)
         {
