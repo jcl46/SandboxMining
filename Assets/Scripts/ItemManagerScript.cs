@@ -34,7 +34,7 @@ public class ItemManagerScript : MonoBehaviour
         item.itemID = "dirt"; item.itemName = "Dirt"; item.maxStackSize = 99; itemList.Add(item);
         item.sprite = Resources.Load("dirt", typeof(Sprite)) as Sprite;
         item = new Item();
-        item.itemID = "stone"; item.itemName = "Stone"; item.maxStackSize = 99; itemList.Add(item);
+        item.itemID = "stone"; item.itemName = "stone"; item.maxStackSize = 99; itemList.Add(item);
         item.sprite = Resources.Load("stone", typeof(Sprite)) as Sprite;
         // Create the list of all block types
         blockList = new List<Block>();
