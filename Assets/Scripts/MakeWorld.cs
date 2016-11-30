@@ -41,7 +41,7 @@ public struct IntVector2
         // Find block templates
         grass = GameObject.Find("grassTop-template");
         dirt = GameObject.Find("dirt-template");
-        stone = GameObject.Find("Stone");
+        stone = GameObject.Find("stone-template");
         template_block = GameObject.Find("dirt-template");
         // Find width/height
         blockwidth = grass.GetComponent<Renderer>().bounds.size.x;
@@ -151,8 +151,10 @@ public struct IntVector2
                     blockarray[x, y] = 'S';
                 else if (y == iCurrentHeight)
                     blockarray[x, y] = 'G';
-                else
+                else if(y > iCurrentHeight)
                     blockarray[x, y] = 'D';
+                if(y > 27)
+                    blockarray[x, y] = 'U';
             }
 
         }
